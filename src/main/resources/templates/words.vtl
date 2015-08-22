@@ -1,0 +1,19 @@
+<h1>Create Your Dictionary!</h1>
+<br>
+<h2>Your List Of Words!</h2>
+<br>
+#foreach($word in $words)
+ <h3><a href="/words/$word.getId()/definitions">$word.getName()</a></h3>
+#end
+
+<a href="/words">Add a word to your WordList</a>
+
+
+
+
+
+
+
+
+
+<!-- <a href="/categories/new">Add a New Category</a> -->

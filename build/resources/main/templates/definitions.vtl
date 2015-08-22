@@ -1,0 +1,12 @@
+<h3>Here are the Definitions of this $word.getName():</h3>
+#if($definitions)
+#foreach($definition in $definitions)
+ <h3>$definition.getDescription()</a></h3>
+#end
+#end
+<a href="/definitions/$word.getId()">Add a one or more Definitions</a>
+<a href="/">Return to Main Page</a>
+
+
+
+<!-- "/words/$word.getId()/definitions" -->

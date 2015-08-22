@@ -1,0 +1,18 @@
+<!-- <h3>Here are all the tasks in this $category.getName():</h3>
+
+#foreach($task in $tasks)
+ <h3>$task.getDescription()</a></h3>
+#end -->
+
+<h1>Add New Definition for this $word.getName()</h1>
+<h2>Please enter New Definition here:</h2>
+<form action="/definitions" method="post">
+  <label for="definitionName">Definition</label>
+  <input id="definitionName" name="definitionName" type="text">
+  <input type="hidden" name="wordId" value="$word.getId()">
+  <button type="submit" class="btn btn-success">Add Definition</button>
+</form>
+
+
+
+<a href="/">Return to Main Page</a>
